@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  font-weight: 300;
+  font-size: $fz-main;
+  line-height: 1.667;
+  font-family: $ff-main;
+  color: rgba($c-main, .8);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 25px;
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+}
+
+// form style
+::-webkit-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+::-moz-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:-moz-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+
+  opacity: 1;
+
+  transition: opacity .3s;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+:focus::-moz-input-placeholder {
+  opacity: 0;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+// remove button clear ie
+::-ms-clear {
+  display: none;
+}
+
+// remove button show password ie
+::-ms-reveal {
+  display: none;
+}
+
+// input auto-complete change color
+:-webkit-autofill {
+  box-shadow: 0 0 100px #fff inset;
+
+  -webkit-text-fill-color: currentColor;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  // outline: none;
+}

@@ -1,0 +1,27 @@
+.box-style {
+  position: relative;
+
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+
+  &_angle {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: inline-block;
+      width: 0;
+      height: 0;
+
+      border-width: 0 70px 70px 0;
+      border-style: solid;
+      border-color: transparent $c-accent transparent transparent;
+
+      @media (max-width: $sm) {
+        border-width: 0 40px 40px 0;
+      }
+    }
+  }
+}

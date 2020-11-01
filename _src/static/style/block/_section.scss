@@ -1,0 +1,15 @@
+.section {
+  margin-bottom: 100px;
+
+  @media (max-width: $md) {
+    margin-bottom: 50px;
+  }
+
+  &_mb_0 {
+    margin-bottom: 0;
+
+    @media (max-width: $md) {
+      margin-bottom: 0;
+    }
+  }
+}

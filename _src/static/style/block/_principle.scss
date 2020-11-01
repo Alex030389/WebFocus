@@ -1,0 +1,91 @@
+.principle {
+  margin-bottom: -180px;
+
+  @media (max-width: $md) {
+    margin-bottom: -130px;
+  }
+}
+
+.principle__text {
+  display: flex;
+  margin-bottom: 35px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.principle__title {
+  flex-shrink: 0;
+  width: 370px;
+  margin-right: 30px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.priciple__box-p {
+}
+
+.priciple__slider {
+  position: relative;
+  z-index: 10;
+}
+
+.priciple__slider-list {
+}
+
+.priciple__slider-item {
+}
+
+.priciple__btn {
+  position: absolute;
+  top: 50%;
+
+  margin-top: -30px;
+
+  @media (max-width: $sl) {
+    top: auto;
+    bottom: 10px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, .5);
+  }
+
+  @media (max-width: $sm) {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    width: 34px;
+    height: 34px;
+
+    fill: rgba(0, 0, 0, .5);
+
+    @media (max-width: $sm) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.slick-btn_prev {
+    left: -80px;
+
+    @media (max-width: $sl) {
+      left: calc(50% - 50px);
+    }
+  }
+
+  &.slick-btn_next {
+    right: -80px;
+
+    @media (max-width: $sl) {
+      right: calc(50% - 50px);
+    }
+  }
+}

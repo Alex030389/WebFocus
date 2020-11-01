@@ -1,0 +1,43 @@
+.footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.footer__top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__col {
+  &_1 {
+    width: $c-3;
+    @media (max-width: $xl) {
+      width: $c-12;
+    }
+  }
+
+  &_2 {
+    width: $c-7;
+    @media (max-width: $xl) {
+      width: $c-12;
+    }
+  }
+
+  &_3 {
+    width: $c-2;
+    @media (max-width: $xl) {
+      width: $c-12;
+    }
+  }
+}
+
+
+.footer__copy {
+  padding: 17px 15px;
+
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: .002em;
+
+  background-color: rgba(0, 0, 0, .1);
+}

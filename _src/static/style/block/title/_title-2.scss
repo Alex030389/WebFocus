@@ -1,0 +1,22 @@
+.title-2 {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.429;
+  font-family: $ff-title;
+  color: rgba($c-main, .9);
+  letter-spacing: .03em;
+
+  @media (max-width: $md) {
+    font-size: 24px;
+  }
+
+  &_mb_lg {
+    margin-bottom: 35px;
+
+    @media (max-width: $md) {
+      margin-bottom: 25px;
+    }
+  }
+}

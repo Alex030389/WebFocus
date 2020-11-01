@@ -1,0 +1,83 @@
+<header class="header">
+  <div class="container">
+    <div class="header__top d-lg-none">
+      <div class="header__lang-form-group">
+        <label class="header__lang-form-label" for="change-lang">Язык</label>
+        <select class="header__lang-form-control" name="lang" id="change-lang" onchange="window.location.href=this.options[this.selectedIndex].value" data-js="selectric">
+          <option value="ru">русский</option>
+          <option value="en">english</option>
+          <option value="sp">spanish</option>
+          <option value="ge">german</option>
+        </select>
+      </div>
+      <button class="header__btn-view btn-reset">
+        <svg aria-hidden="true">
+          <use xlink:href="./static/img/symbol/sprite.svg#eye"></use>
+        </svg>
+      </button>
+      <ul class="header__phone-list list-reset">
+        <li class="header__phone-item">
+          <a class="header__phone-link" href="tel:+37544755-01-01">+375 (44) 755-01-01</a>
+          <div class="header__phone-icons">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#a1"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#phone"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#viber"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="header__phone-item">
+          <a class="header__phone-link" href="tel:+37544755-01-01">+375 (44) 755-01-01</a>
+          <div class="header__phone-icons">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="./static/img/symbol/sprite.svg#mts"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div><!--/header__top-->
+
+    <div class="header__bottom">
+      <a class="header__logo" href="#">
+        <img src="./static/img/logo/Logo.svg" alt="logo">
+      </a>
+
+      <ul class="header__menu list-reset d-lg-none">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">О нас</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Услуги</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Тарифы</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Инфоцентр</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      
+      <button class="header__btn-search btn-reset d-lg-none">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="./static/img/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+
+      <button class="header__btn-menu btn-reset d-none d-lg-block">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="./static/img/symbol/sprite.svg#menu"></use>
+        </svg>
+      </button>
+    </div><!--/header__bottom-->
+  </div>
+</header>

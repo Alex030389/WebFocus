@@ -1,0 +1,37 @@
+.advantages {
+  // padding-bottom: 80px;
+  margin-bottom: -60px;
+}
+
+.advantages__part {
+  &:not(:last-child) {
+    margin-bottom: 70px !important;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+    @media (max-width: $md) {
+      margin-bottom: 40px !important;
+    }
+  }
+}
+
+.advantages__text {
+  width: $c-6;
+  margin-bottom: 0;
+  padding-right: 110px;
+
+  @media (max-width: $xl) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+  }
+}
+
+.advantages__wrap-list {
+  width: $c-6;
+  @media (max-width: $md) {
+    width: $c-12;
+  }
+}

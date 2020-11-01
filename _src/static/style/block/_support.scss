@@ -1,0 +1,32 @@
+.support__box {
+  padding: 50px 70px 35px;
+
+  font-weight: 300;
+
+  background: #fff url(../img/ui/bg_support.jpg) right center no-repeat;
+  background-size: auto 100%;
+
+  @media (max-width: $lg) {
+    background: #fff;
+  }
+
+  @media (max-width: $md) {
+    padding: 40px 30px 20px;
+  }
+}
+
+.support__title {
+  max-width: 550px;
+
+  @media (max-width: $lg) {
+    max-width: 100%;
+  }
+}
+
+.support__text {
+  max-width: 475px;
+
+  @media (max-width: $lg) {
+    max-width: 100%;
+  }
+}

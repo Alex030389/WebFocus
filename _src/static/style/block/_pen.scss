@@ -1,0 +1,15 @@
+.pen {
+  height: 180px;
+  margin-bottom: 80px;
+
+  background: url(../img/ui/bg_pencil.jpg) center center no-repeat;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    height: 120px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 50px;
+  }
+}
