@@ -11,7 +11,7 @@
   flex-direction: column;
   width: $c-4;
   min-height: 140px;
-  padding: 24px 110px 24px 40px;
+  padding: 24px 133px 24px 40px;
 
   transition: .2s;
 
@@ -33,6 +33,7 @@
   font-size: 20px;
   line-height: 1.5;
   font-family: $ff-title;
+  color: rgba($c-main, .9);
 }
 
 .directions__box-icon {

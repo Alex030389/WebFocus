@@ -14,7 +14,7 @@
   flex-direction: column;
   width: $c-6;
   min-height: 140px;
-  padding: 22px 30px 18px 100px;
+  padding: 24px 30px 18px 100px;
 
   &:nth-child(1),
   &:nth-child(9) {
@@ -107,7 +107,7 @@
 .services__btn {
   flex-shrink: 0;
   align-self: flex-start;
-  margin-left: 18%;
+  margin-left: 17%;
 
   @media (max-width: $lg) {
     margin-left: 10%;

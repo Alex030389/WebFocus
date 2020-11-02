@@ -29,12 +29,33 @@
   url(../font/Commissioner/commissioner-v1-latin_cyrillic-regular.woff);
 }
 
+// /////////////////////////////////////////////////// lato
 @font-face {
-  font-weight: 300;
-  font-family: Commissioner;
+  font-weight: 600;
+  font-family: Lato;
   font-style: normal;
 
   font-display: swap;
-  src: url(../font/Commissioner/commissioner-v1-latin_cyrillic-300.woff2),
-  url(../font/Commissioner/commissioner-v1-latin_cyrillic-300.woff);
+  src: url(../font/Lato/latosemibold.woff2),
+  url(../font/Lato/latosemibold.woff2);
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Lato;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/Lato/latoregular.woff2),
+  url(../font/Lato/latoregular.woff);
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Lato;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/Lato/latolight.woff2),
+  url(../font/Lato/latolight.woff);
 }

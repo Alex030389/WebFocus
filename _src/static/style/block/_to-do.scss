@@ -9,7 +9,7 @@
   @extend .col;
 
   width: $c-6;
-  padding: 45px 50px 30px;
+  padding: 41px 50px 30px;
 
   @media (max-width: $md) {
     width: $c-12;
@@ -22,6 +22,7 @@
   &_wide {
     display: flex;
     width: $c-12;
+    padding-bottom: 20px;
 
     @media (max-width: $md) {
       flex-direction: column;
@@ -29,8 +30,8 @@
 
     .title-2 {
       flex-shrink: 0;
-      width: 260px;
-      margin-right: 8%;
+      width: 233px;
+      margin-right: 11%;
       @media (max-width: $md) {
         width: 100%;
       }
@@ -41,4 +42,5 @@
 .to-do__title {
   font-size: 26px;
   line-height: 1.73;
+  letter-spacing: 0;
 }

@@ -44,10 +44,12 @@
     }
 
     .benefits__p {
-      max-width: 790px;
+      max-width: 760px;
 
+      font-weight: 300;
       font-size: 15px;
       text-align: left;
+      letter-spacing: 0;
     }
   }
 }
@@ -71,6 +73,7 @@
 
 .benefits__p {
   width: 100%;
+
   font-weight: 400;
   font-size: 16px;
   text-align: center;

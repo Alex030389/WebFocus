@@ -8,6 +8,7 @@
 
   b {
     font-weight: 500;
+    font-family: $ff-title;
   }
 }
 
@@ -75,6 +76,7 @@
   margin-bottom: 72px;
 
   font-size: 20px;
+  letter-spacing: 0;
 
   @media (max-width: $md) {
     margin-bottom: 30px;
@@ -128,6 +130,8 @@
   }
   p {
     margin-bottom: 5px;
+
+    color: rgba($c-main, .8);
   }
 }
 
@@ -147,6 +151,7 @@
   font-size: 14px;
   color: rgba($c-main, .75);
   text-transform: uppercase;
+  letter-spacing: .04em;
 }
 
 .footer__col-inner {
@@ -162,7 +167,7 @@
 
   font-size: 12px;
   text-align: center;
-  letter-spacing: .002em;
+  letter-spacing: .02em;
 
   background-color: rgba(0, 0, 0, .1);
 }
