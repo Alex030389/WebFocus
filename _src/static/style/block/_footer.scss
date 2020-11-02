@@ -2,6 +2,10 @@
   background-color: #f2f2f2;
   border-top: 1px solid rgba(0, 0, 0, .1);
 
+  @media (max-width: $xl) {
+    border-top: none;
+  }
+
   b {
     font-weight: 500;
   }
@@ -10,11 +14,16 @@
 .footer__top {
   padding-top: 50px;
   padding-bottom: 60px;
+
   font-size: 13px;
   color: rgba($c-main, .5);
 
+  @media (max-width: $xl) {
+    padding-top: 0;
+  }
+
   @media (max-width: $md) {
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 50px;
   }
 }
@@ -27,8 +36,8 @@
     }
 
     @media (max-width: $md) {
-      width: $c-12;
       order: 2;
+      width: $c-12;
     }
   }
 
@@ -36,8 +45,9 @@
     width: $c-7;
     padding-top: 33px;
     @media (max-width: $xl) {
-      width: $c-12;
       order: -1;
+      width: $c-12;
+      padding-top: 0;
       padding-bottom: 40px;
     }
 
@@ -52,17 +62,19 @@
     @media (max-width: $xl) {
       width: $c-6;
     }
-    
+
     @media (max-width: $md) {
-      width: $c-12;
       order: 1;
+      width: $c-12;
+      padding-top: 10px;
     }
   }
 }
 
 .footer__title {
-  font-size: 20px;
   margin-bottom: 72px;
+
+  font-size: 20px;
 
   @media (max-width: $md) {
     margin-bottom: 30px;
@@ -91,22 +103,23 @@
 
 .footer__link-arrow {
   padding-right: 75px;
+
   background: url(../img/icon/arrow-link.svg) right center no-repeat;
-  
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-
 .footer__title-2 {
+  margin-bottom: 30px;
+  padding-bottom: 4px;
+
+  font-weight: 400;
   color: rgba($c-main, .5);
   text-transform: uppercase;
-  font-weight: 400;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 4px;
-  margin-bottom: 30px;
 
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .footer__box-address {
@@ -121,23 +134,20 @@
 .footer__email {
   font-weight: 400;
   color: rgba($c-main, .8);
-  
+
   &:hover {
     color: rgba($c-main, .8);
-
   }
 }
 
 .footer__box-address .footer__title-3 {
+  margin-bottom: 10px;
+
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
   color: rgba($c-main, .75);
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-
-
-
 
 .footer__col-inner {
   width: $c-4;
@@ -146,11 +156,6 @@
     width: $c-12;
   }
 }
-
-
-
-
-
 
 .footer__copy {
   padding: 17px 15px;
