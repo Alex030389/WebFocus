@@ -2,13 +2,14 @@
 }
 
 .to-do__list {
-  @extend .row;
+  margin-bottom: -30px;
 }
 
 .to-do__item {
   @extend .col;
 
   width: $c-6;
+  margin-bottom: 30px;
   padding: 41px 50px 30px;
 
   @media (max-width: $md) {

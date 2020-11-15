@@ -20,16 +20,19 @@ $xs: 425.98px;
 
 // //////////////////////////////////////// grid
 .row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  margin: 0 -15px -30px !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px !important;
+  margin-left: -15px !important;
 }
 
 .col {
-  margin: 0 15px 30px !important;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 $gap: 30px;
+// col
 $c-12: calc(100% - #{$gap});
 $c-11: calc(91.666667% - #{$gap});
 $c-10: calc(83.333333% - #{$gap});
@@ -42,3 +45,6 @@ $c-4: calc(33.333333% - #{$gap});
 $c-3: calc(25% - #{$gap});
 $c-2: calc(16.666667% - #{$gap});
 $c-1: calc(8.333333% - #{$gap});
+
+// offset col
+$m-4: calc(33.333333% + $gap / 2);

@@ -21,7 +21,7 @@
 <body>
 <header class="header">
   <div class="container">
-    <div class="header__top d-lg-none">
+    <div class="header__top">
       <div class="header__lang-form-group">
         <label class="header__lang-form-label" for="change-lang">Язык</label>
         <select class="header__lang-form-control" name="lang" id="change-lang" onchange="window.location.href=this.options[this.selectedIndex].value" data-js="selectric">
@@ -67,7 +67,7 @@
         <img src="./static/img/logo/Logo.svg" alt="logo">
       </a>
 
-      <ul class="header__menu list-reset d-lg-none">
+      <ul class="header__menu list-reset">
         <li class="header__menu-item">
           <a class="header__menu-link" href="#">Главная</a>
         </li>
@@ -88,18 +88,57 @@
         </li>
       </ul>
       
-      <button class="header__btn-search btn-reset d-lg-none">
+      <button class="header__btn-search btn-reset" data-js="header__btn-search">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="./static/img/symbol/sprite.svg#search"></use>
         </svg>
       </button>
 
-      <button class="header__btn-menu btn-reset d-none d-lg-block">
+      <button class="header__btn-menu btn-reset d-none d-lg-block" data-js="header__btn-menu">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="./static/img/symbol/sprite.svg#menu"></use>
         </svg>
       </button>
     </div><!--/header__bottom-->
+
+    <form class="header__search-form" data-js="header__search-form">
+      <div class="header__search-form-inner">
+        <input class="header__form-control" type="text" placeholder="search">
+        <button class="header__search-btn btn btn_secondary">Search</button>
+      </div>
+    </form>
+  </div><!--/container-->
+
+  <div class="header__m-nav m-nav" data-js="m-nav">
+    <ul class="m-nav__list list-reset">
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#"></a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Главная</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">О нас</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Услуги</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Тарифы</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Инфоцентр</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <button class="m-nav__btn btn-reset d-none d-lg-block" data-js="m-nav__btn">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="./static/img/symbol/sprite.svg#menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
@@ -236,8 +275,8 @@
       <!-- ////////////////////////////////////////////////////////// benefits -->
       <section class="benefits benefits_mt_negative section">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="benefits__list list-reset">
-          <li class="benefits__item box-style">
+        <ul class="benefits__list list-reset row">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#safe-protection"></use>
@@ -245,7 +284,7 @@
             </div>
             <p class="benefits__p">Надежная защита</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#premium-reputation"></use>
@@ -253,7 +292,7 @@
             </div>
             <p class="benefits__p">Безупречная репутация</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#goal-result"></use>
@@ -262,7 +301,7 @@
             <p class="benefits__p">Ориентированность на
               результат</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#protected-data"></use>
@@ -374,16 +413,14 @@
           </li>
         </ul>
 
-        <a class="directions__btn btn btn_primary" href="#">
-          Все услуги
-        </a>
+        <a class="directions__btn btn btn_primary" href="#">Все услуги</a>
       </section>
 
       <!-- ////////////////////////////////////////////////////////// principle -->
       <section class="principle section section_mb_0">
-        <div class="principle__text">
-          <h2 class="principle__title title-2 title-2_mb_lg">Основные направления деятельности</h2>
-          <div class="priciple__box-p">
+        <div class="principle__text row">
+          <h2 class="principle__title title-2 title-2_mb_lg col">Основные направления деятельности</h2>
+          <div class="priciple__box-p col">
             <p>Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом, с тем чтобы от начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим целью не только привлечение новых клиентов, но и поддержание длительных партнерских отношений с клиентами, которые уже воспользовались нашими услугами.</p>
             <p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой сложности.</p>
           </div>
@@ -471,9 +508,11 @@
       <!-- ////////////////////////////////////////////////////////// partners -->
       <section class="partners section section_mb_0">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <div class="partners__top">
-          <p class="partners__p">Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.</p>
-          <a class="partners__btn btn btn_secondary" href="#">Наши партнеры</a>
+        <div class="partners__top row">
+          <div class="partners__text col">Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.</div>
+          <div class="partners__wrap-btn col">
+            <a class="partners__btn btn btn_secondary" href="#">Наши партнеры</a>
+          </div>
         </div>
         <ul class="partners__list list-reset">
           <li class="partners__item">
@@ -500,16 +539,16 @@
     <div class="container">
       <!-- ////////////////////////////////////////////////////////// to do -->
       <section class="to-do section">
-        <ul class="to-do__list list-reset">
+        <ul class="to-do__list list-reset row">
           <li class="to-do__item box-style">
-            <h2 class="to-do__title title-2 title-2_mb_">Просто объясним сложные вещи</h2>
+            <h2 class="to-do__title title-2 col">Просто объясним сложные вещи</h2>
             <p>В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
           </li>
-          <li class="to-do__item box-style box-style_angle">
+          <li class="to-do__item box-style box-style_angle col">
             <h2 class="to-do__title title-2">Надежно защитим права и интересы</h2>
             <p>Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и не беспокоиться о нахождении работника на рабочем месте в нужный момент.</p>
           </li>
-          <li class="to-do__item to-do__item_wide box-style">
+          <li class="to-do__item to-do__item_wide box-style col">
             <h2 class="to-do__title title-2">Вы платите только 
               за результат!</h2>
             <p>В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.</p>
@@ -524,53 +563,55 @@
       <!-- ////////////////////////////////////////////////////////// services -->
       <section class="services section section_mb_0">
         <h2 class="title-2 title-2_mb_lg">Перечень оказываемых услуг</h2>
-        <ul class="services__list list-reset">
-          <li class="services__item services__item_opacity_50 box-style">
+        <ul class="services__list list-reset row">
+          <li class="services__item services__item_opacity_50 box-style col">
             <p class="services__text">Регистрации ИП и юрлиц</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_50 box-style">
+          <li class="services__item services__item_opacity_50 box-style col">
             <p class="services__text">Ликвидация, реорганизация и продажа бизнеса</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_75 box-style">
+          <li class="services__item services__item_opacity_75 box-style col">
             <p class="services__text">Взыскание дебиторской задолженности</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_75 box-style">
+          <li class="services__item services__item_opacity_75 box-style col">
             <p class="services__text">Письменные и устные консультации</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item box-style">
+          <li class="services__item box-style col">
             <p class="services__text">Разработка уставных документов и внесение 
               изменений в них</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item box-style">
+          <li class="services__item box-style col">
             <p class="services__text">Ведение переговоров</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_75 box-style">
+          <li class="services__item services__item_opacity_75 box-style col">
             <p class="services__text">Комплексное сопровождение бизнеса</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_75 box-style">
+          <li class="services__item services__item_opacity_75 box-style col">
             <p class="services__text">Сопровождение деловых сделок</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_50 box-style">
+          <li class="services__item services__item_opacity_50 box-style col">
             <p class="services__text">Лицензирование бизнеса</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
-          <li class="services__item services__item_opacity_50 box-style">
+          <li class="services__item services__item_opacity_50 box-style col">
             <p class="services__text">Решение правовых споров</p>
             <a class="services__link link" href="#">Подробнее</a>
           </li>
         </ul>
 
-        <div class="services__bottom">
-          <p class="services__p">Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.</p>
-          <a class="services__btn btn btn_primary" href="#">Все услуги</a>
+        <div class="services__bottom row">
+          <div class="services__text col">Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.</div>
+          <div class="services__wrap-btn col">
+            <a class="services__btn btn btn_primary" href="#">Все услуги</a>
+          </div>
         </div>
       </section>
     </div>
@@ -595,7 +636,7 @@
               <li class="list__item">успешный опыт решения нестандартных вопросов</li>
             </ul>
           </div>
-        </div>
+        </div><!--/advantages__part-->
 
         <div class="advantages__part row">
           <div class="advantages__text col">
@@ -611,7 +652,7 @@
               <li class="list__item">компетентное решение правовых вопросов</li>
             </ul>
           </div>
-        </div>
+        </div><!--/advantages__part-->
       </section>
     </div><!--/container-->
   </div><!--/wrap-->
@@ -621,8 +662,8 @@
       <!-- ////////////////////////////////////////////////////////// benefits -->
       <section class="benefits section">
         <h2 class="title-2 title-2_mb_lg">Наши преимущества</h2>
-        <ul class="benefits__list list-reset">
-          <li class="benefits__item box-style">
+        <ul class="benefits__list list-reset row">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#license"></use>
@@ -630,7 +671,7 @@
             </div>
             <p class="benefits__p">Лицензия на оказание юридических услуг</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#team"></use>
@@ -638,7 +679,7 @@
             </div>
             <p class="benefits__p">Опытные сотрудники</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#communication"></use>
@@ -646,7 +687,7 @@
             </div>
             <p class="benefits__p">Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы</p>
           </li>
-          <li class="benefits__item box-style">
+          <li class="benefits__item box-style col">
             <div class="benefits__box-icon">
               <svg class="icon icon_lg" aria-hidden="true">
                 <use xlink:href="./static/img/symbol/sprite.svg#edit-writing"></use>
@@ -654,7 +695,7 @@
             </div>
             <p class="benefits__p">Скрупулезный поход к ведению документации</p>
           </li>
-          <li class="benefits__item benefits__item_wide box-style box-style_angle">
+          <li class="benefits__item benefits__item_wide box-style box-style_angle col">
             <p class="benefits__p">Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</p>
           </li>
         </ul>
@@ -693,8 +734,12 @@
       <!-- ////////////////////////////////////////////////////////// cost -->
       <section class="cost section section_mb_0">
         <h2 class="title-2 title-2_mb_lg">Стоимость юридических услуг в Минске</h2>
-        <p class="cost_p">Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.</p>
-        <a class="btn btn_primary" href="#">Тарифы</a>
+        <div class="cost__row row">
+          <div class="cost__text col">Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.</div>
+          <div class="cost__wrap-btn col">
+            <a class="btn btn_primary" href="#">Тарифы</a>
+          </div>
+        </div><!--/cost__row-->        
       </section>
     </div><!--/container-->
   </div><!--/wrap-->

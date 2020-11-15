@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    <div class="header__top d-lg-none">
+    <div class="header__top">
       <div class="header__lang-form-group">
         <label class="header__lang-form-label" for="change-lang">Язык</label>
         <select class="header__lang-form-control" name="lang" id="change-lang" onchange="window.location.href=this.options[this.selectedIndex].value" data-js="selectric">
@@ -46,7 +46,7 @@
         <img src="./static/img/logo/Logo.svg" alt="logo">
       </a>
 
-      <ul class="header__menu list-reset d-lg-none">
+      <ul class="header__menu list-reset">
         <li class="header__menu-item">
           <a class="header__menu-link" href="#">Главная</a>
         </li>
@@ -67,17 +67,56 @@
         </li>
       </ul>
       
-      <button class="header__btn-search btn-reset d-lg-none">
+      <button class="header__btn-search btn-reset" data-js="header__btn-search">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="./static/img/symbol/sprite.svg#search"></use>
         </svg>
       </button>
 
-      <button class="header__btn-menu btn-reset d-none d-lg-block">
+      <button class="header__btn-menu btn-reset d-none d-lg-block" data-js="header__btn-menu">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="./static/img/symbol/sprite.svg#menu"></use>
         </svg>
       </button>
     </div><!--/header__bottom-->
+
+    <form class="header__search-form" data-js="header__search-form">
+      <div class="header__search-form-inner">
+        <input class="header__form-control" type="text" placeholder="search">
+        <button class="header__search-btn btn btn_secondary">Search</button>
+      </div>
+    </form>
+  </div><!--/container-->
+
+  <div class="header__m-nav m-nav" data-js="m-nav">
+    <ul class="m-nav__list list-reset">
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#"></a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Главная</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">О нас</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Услуги</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Тарифы</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Инфоцентр</a>
+      </li>
+      <li class="m-nav__item">
+        <a class="m-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <button class="m-nav__btn btn-reset d-none d-lg-block" data-js="m-nav__btn">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="./static/img/symbol/sprite.svg#menu"></use>
+      </svg>
+    </button>
   </div>
 </header>

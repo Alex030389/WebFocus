@@ -1,5 +1,7 @@
 .directions__list {
   @extend .row;
+
+  margin-bottom: 10px;
 }
 
 .directions__item {
@@ -11,6 +13,7 @@
   flex-direction: column;
   width: $c-4;
   min-height: 140px;
+  margin-bottom: 30px;
   padding: 24px 133px 24px 40px;
 
   transition: .2s;
@@ -57,5 +60,4 @@
 }
 
 .directions__btn {
-  margin-top: 40px;
 }

@@ -21,6 +21,10 @@ img {
   max-width: 100%;
 }
 
+button:active {
+  outline: none;
+}
+
 p {
   margin-bottom: 25px;
 

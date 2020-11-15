@@ -2,9 +2,7 @@
 }
 
 .partners__top {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (max-width: $md) {
     flex-direction: column;
@@ -12,22 +10,21 @@
   }
 }
 
-.partners__p {
+.partners__text {
+  width: $c-8;
   @media (max-width: $md) {
+    width: $c-12;
     margin-bottom: 30px;
   }
 }
 
-.partners__btn {
-  flex-shrink: 0;
-  margin: 0 17% 0 10%;
-
-  @media (max-width: $lg) {
-    margin-right: 0;
-  }
-
+.partners__wrap-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $c-4;
   @media (max-width: $md) {
-    margin-left: 0;
+    width: $c-12;
   }
 }
 

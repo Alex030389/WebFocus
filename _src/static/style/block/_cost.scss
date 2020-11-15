@@ -1,12 +1,28 @@
 .cost {
-  max-width: 690px;
-  margin-top: -55px;
+  margin-top: -20px;
 
   @media (max-width: $md) {
-    margin-top: -30px;
+    margin-top: 0;
   }
 }
 
-.cost_p {
-  margin-bottom: 30px;
+.cost__row {
+}
+
+.cost__text {
+  width: $c-8;
+  @media (max-width: $md) {
+    width: $c-12;
+    margin-bottom: 30px;
+  }
+}
+
+.cost__wrap-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $c-4;
+  @media (max-width: $md) {
+    width: $c-12;
+  }
 }
